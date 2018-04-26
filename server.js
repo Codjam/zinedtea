@@ -22,13 +22,6 @@ mongoose.Promise = global.Promise;
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/zinedtea")
 
-const io = require("socket.io")(server);
-
-  io.on("connection", (client) => {
-    client.on("article_saved", article => {
-      io.emit('article_saved', article);
-    })
-  });
 
 // Start the API server
 server.listen(PORT, function() {
