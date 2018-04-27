@@ -26,11 +26,19 @@ We are currently selling three teas that increase longevity for the human body. 
 
 Tea Descriptions:
 
-1.) Super Interpolation:  Sarsaparilla, Stinging Netle & Red Clover.
-20 count $10
+1.) Super Interpolation: 
+      descritpion: Sarsaparilla, Stinging Netle & Red Clover.
+      price: 20 count $10
+      image: ![image](https://user-images.githubusercontent.com/31421883/39383180-487241c6-4a36-11e8-838e-b374db33a0ed.png)
 
-2.) mineralScript: Burdock Root, Elderberry, Linden Leaf & Key Lime.
-20 count $10
+2.) mineralScript: 
+      description: Burdock Root, Elderberry, Linden Leaf & Key Lime.
+      price: 20 count $10
+      image: ![image](https://user-images.githubusercontent.com/31421883/39383232-8709afe6-4a36-11e8-959a-06cbbf8461e6.png)
 
-3.) Bootcamp Groove:  Damiana, Ginger, Sensitiva & Yohimbe
-20 count $10
+3.) Bootcamp Groove:  
+       description: Damiana, Ginger, Sensitiva & Yohimbe
+       price: 20 count $10
+       iamge: ![image](https://user-images.githubusercontent.com/31421883/39383238-8f09befc-4a36-11e8-8706-76071aafb532.png)
+
+
