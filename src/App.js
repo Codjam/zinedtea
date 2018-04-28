@@ -7,6 +7,7 @@ import home from './components/home.js';
 import teas from './components/teas.js';
 import comments from './components/comments.js';
 import user from './components/user.js';
+import { Footer, FooterSection, FooterLinkList } from 'react-mdl';
 
 
 
@@ -17,7 +18,7 @@ class App extends Component {
       <Fragment>
       <div className="demo-big-content">
       <Layout>
-        <Header title="Zinedtea" scroll>
+        <Header className="header-color" title="Zinedtea" scroll>
             <Navigation>
                 <Link to="/home">Home</Link>
                 <Link to="/comments">Comments</Link>
@@ -41,14 +42,28 @@ class App extends Component {
               <Route path='/comments' component={comments} />
               <Route path='/user' component={user} />
             </Switch>
-
           </Content>
       </Layout>
   </div>
-
+  <Footer size="mini">
+      <FooterSection type="left" logo="Title">
+          <FooterLinkList>
+              <a href="#">Help</a>
+              <a href="#">Privacy & Terms</a>
+          </FooterLinkList>
+      </FooterSection>
+  </Footer>
 </Fragment>
     );
   }
 }
+<Footer size="mini">
+    <FooterSection type="left" logo="Title">
+        <FooterLinkList>
+            <a href="#">Help</a>
+            <a href="#">Privacy & Terms</a>
+        </FooterLinkList>
+    </FooterSection>
+</Footer>
 
 export default App;
