@@ -9,9 +9,6 @@ import comments from './components/comments.js';
 import user from './components/user.js';
 import { Footer, FooterSection, FooterLinkList } from 'react-mdl';
 
-
-
-
 class App extends Component {
   render() {
     return (
@@ -45,11 +42,12 @@ class App extends Component {
           </Content>
       </Layout>
   </div>
-  <Footer size="mini">
-      <FooterSection type="left" logo="Title">
+  <Footer className="bottom-bar"  size="mini">
+      <FooterSection type="left" logo="sharethis-inline-reaction-buttons">
           <FooterLinkList>
               <a href="#">Help</a>
               <a href="#">Privacy & Terms</a>
+
           </FooterLinkList>
       </FooterSection>
   </Footer>
@@ -57,13 +55,6 @@ class App extends Component {
     );
   }
 }
-<Footer size="mini">
-    <FooterSection type="left" logo="Title">
-        <FooterLinkList>
-            <a href="#">Help</a>
-            <a href="#">Privacy & Terms</a>
-        </FooterLinkList>
-    </FooterSection>
-</Footer>
+
 
 export default App;
