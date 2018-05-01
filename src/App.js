@@ -43,7 +43,7 @@ class App extends Component {
       </Layout>
   </div>
   <Footer className="bottom-bar"  size="mini">
-      <FooterSection type="left" logo="sharethis-inline-reaction-buttons">
+      <FooterSection type="left" logo="Deniz & Jamal">
           <FooterLinkList>
               <a href="#">Help</a>
               <a href="#">Privacy & Terms</a>
