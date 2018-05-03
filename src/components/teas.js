@@ -9,8 +9,20 @@ import ZinModal from './modal';
 class Teas extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeTab: 0 };
+    this.state = {
+      activeTab: 0,
+      modalIsOpen: false
+
+    };
   }
+
+  openModal = () => {
+    this.setState({ modalIsOpen: true });
+  };
+
+  closeModal = () => {
+    this.setState({ modalIsOpen: false });
+  };
 
   componentDidMount() {
     console.log(teas);
@@ -27,9 +39,10 @@ class Teas extends Component {
                 {tea.description}
               </CardText>
               <CardActions border>
-                  <Button raised>Buy It</Button>
+                  <Button raised onClick={this.openModal}>Buy It</Button>
               </CardActions>
-              <ZinModal/>
+              <ZinModal modalIsOpen={this.state.modalIsOpen}
+              closeModal={this.closeModal}/>
             </Card>
           ))
         }

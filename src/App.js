@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <Fragment>
       <div className="demo-big-content">
-      <Layout>
+      <Layout fixedHeader>
         <Header className="header-color" title="Zinedtea" scroll>
             <Navigation>
                 <Link to="/home">Home</Link>
@@ -23,14 +23,6 @@ class App extends Component {
                 <Link to="/user">User</Link>
             </Navigation>
         </Header>
-          <Drawer title="Login">
-              <Navigation>
-                <Link to="/home">Home</Link>
-                <Link to="/comments">Comments</Link>
-                <Link to="/teas">Teas</Link>
-                <Link to="/user">User</Link>
-              </Navigation>
-          </Drawer>
           <Content>
             <Switch>
               <Route  exact path='/' component={home} />
@@ -47,7 +39,6 @@ class App extends Component {
           <FooterLinkList>
               <a href="#">Help</a>
               <a href="#">Privacy & Terms</a>
-
           </FooterLinkList>
       </FooterSection>
   </Footer>
