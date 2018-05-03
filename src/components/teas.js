@@ -4,6 +4,7 @@ import { Tabs, Tab } from 'react-mdl'
 import teas from '../teaData';
 import { well, row, Col } from 'react-mdl';
 import { Grid, Cell, div } from 'react-mdl';
+import ZinModal from './modal';
 
 class Teas extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class Teas extends Component {
               <CardActions border>
                   <Button raised>Buy It</Button>
               </CardActions>
+              <ZinModal/>
             </Card>
           ))
         }
