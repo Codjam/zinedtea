@@ -7,6 +7,8 @@ import home from './components/home.js';
 import teas from './components/teas.js';
 import comments from './components/comments.js';
 import user from './components/user.js';
+import checkout from
+'./components/checkout.js';
 import { Footer, FooterSection, FooterLinkList } from 'react-mdl';
 
 class App extends Component {
@@ -29,6 +31,8 @@ class App extends Component {
                 <Link to="/comments">Comments</Link>
                 <Link to="/teas">Teas</Link>
                 <Link to="/user">User</Link>
+                <Link
+                to="/checkout">cart</Link>
               </Navigation>
           </Drawer>
           <Content>
@@ -38,6 +42,9 @@ class App extends Component {
               <Route path='/teas' component={teas} />
               <Route path='/comments' component={comments} />
               <Route path='/user' component={user} />
+              <Route path='/checkout'
+              component={checkout}
+              />
             </Switch>
           </Content>
       </Layout>
