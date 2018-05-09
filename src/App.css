@@ -47,7 +47,22 @@ footer ul li {
 
 .home-body {
   margin: auto;
+  font-family: 'Pacifico', cursive;
 }
+
+h1 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 370px;
+    margin-top: 222px;
+    font-family: 'Gloria Hallelujah';
+    color: white;
+    }
 /*element.stylesheet {
   position: fixed;
   top: 111.5px;
