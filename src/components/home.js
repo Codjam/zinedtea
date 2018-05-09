@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab } from 'react'
+import { Grid, Cell } from 'react-mdl'
+
 class Home extends Component {
 
 state = {
@@ -31,7 +33,10 @@ state = {
 
   render() {
     return(
-      <div>
+      <div className="home-body">
+        <Grid className="homme-grid">
+          <Cell col={12}>half page</Cell>
+        </Grid>
         {
 
           this.state.teas.map(tea => {

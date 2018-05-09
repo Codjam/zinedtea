@@ -9,7 +9,6 @@ import { BrowserRouter as Router} from 'react-router-dom';
 // import registerServiceWorker from './registerServiceWorker';
 
 
-import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import {BrowserRouter} from 'react-router-dom'
 ReactDOM.render(

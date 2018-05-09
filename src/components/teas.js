@@ -5,6 +5,8 @@ import teas from '../teaData';
 import { well, row, Col } from 'react-mdl';
 import { Grid, Cell, div } from 'react-mdl';
 import ZinModal from './modal';
+import { Dialog, DialogTitle, DialogContent, DialogActions} from 'react-mdl';
+
 
 class Teas extends Component {
   constructor(props) {
@@ -14,15 +16,21 @@ class Teas extends Component {
       modalIsOpen: false
 
     };
+    this.handleOpenDialog = this.handleOpenDialog.bind(this);
+        this.handleCloseDialog = this.handleCloseDialog.bind(this);
   }
 
-  openModal = () => {
-    this.setState({ modalIsOpen: true });
-  };
+  handleOpenDialog() {
+   this.setState({
+     openDialog: true
+   });
+ }
 
-  closeModal = () => {
-    this.setState({ modalIsOpen: false });
-  };
+ handleCloseDialog() {
+   this.setState({
+     openDialog: false
+   });
+ }
 
   componentDidMount() {
     console.log(teas);
@@ -30,6 +38,7 @@ class Teas extends Component {
 
   render() {
     return(
+      <div>
       <Grid className="projects-grid">
         {
           teas.map(tea => (
@@ -39,15 +48,25 @@ class Teas extends Component {
                 {tea.description}
               </CardText>
               <CardActions border>
-                  <Button raised onClick={this.openModal}>Buy It</Button>
+                <Button colored onClick={this.handleOpenDialog} raised ripple>Buy</Button>
               </CardActions>
-              <ZinModal modalIsOpen={this.state.modalIsOpen}
-              closeModal={this.closeModal}/>
+              {/* <ZinModal modalIsOpen={this.state.modalIsOpen}
+              closeModal={this.closeModal}/> */}
             </Card>
           ))
         }
-
     </Grid>
+    <Dialog open={this.state.openDialog}>
+          <DialogTitle>Allow this site to collect usage data to improve your experience?</DialogTitle>
+          <DialogContent>
+            <p>Allowing us to collect data will let us get you the information you want faster.</p>
+          </DialogContent>
+          <DialogActions fullWidth>
+            <Button type='button'>Agree</Button>
+            <Button type='button' onClick={this.handleCloseDialog}>Disagree</Button>
+          </DialogActions>
+        </Dialog>
+        </div>
     )
   }
 }

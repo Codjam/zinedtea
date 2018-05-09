@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import './App.css';
 import { Layout, Header, Drawer, Navigation, Content } from 'react-mdl';
 import Main from './components/main';
 import { Route, Link, Switch } from 'react-router-dom';
@@ -8,6 +7,9 @@ import teas from './components/teas.js';
 import comments from './components/comments.js';
 import user from './components/user.js';
 import { Footer, FooterSection, FooterLinkList } from 'react-mdl';
+import 'react-mdl/extra/material.css';
+import './App.css';
+
 
 class App extends Component {
   render() {

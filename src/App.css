@@ -17,8 +17,6 @@ projects-grid {
   display: flex;
 }
 
-
-
 footer {
   position: fixed;
   margin-top: 2%;
@@ -41,3 +39,16 @@ footer ul li {
   margin: 0 15px;
   color: #ff5800;
 }
+
+.mdl-dialog {
+  width: 700px;
+  height: 500px;
+}
+
+.home-body {
+  margin: auto;
+}
+/*element.stylesheet {
+  position: fixed;
+  top: 111.5px;
+}*/
