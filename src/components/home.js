@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Tabs, Tab} from 'react'
 import {Grid, Cell} from 'react-mdl'
 import { findDOMNode } from 'react-dom';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 class Home extends Component {
 
