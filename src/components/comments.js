@@ -51,7 +51,7 @@ class Comments extends Component {
   render() {
     return(
       <div>
-      <h1>Comments Page</h1>
+      
       <form onSubmit = {this.onSubmit.bind(this)}>
       <input type="text"
       value = {this.state.name} onChange = {this.onNameChange.bind(this)}/>
