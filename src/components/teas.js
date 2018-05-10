@@ -5,25 +5,29 @@ import { getTeas } from '../api';
 import { well, row, Col } from 'react-mdl';
 import { Grid, Cell, div } from 'react-mdl';
 import ZinModal from './modal';
-<<<<<<< HEAD
 import { Dialog, DialogTitle, DialogContent, DialogActions} from 'react-mdl';
-=======
 import checkout from './checkout'
 
->>>>>>> f708b1fc7db6361f1a20543828c1716f3cfe5ccc
 
 
 class Teas extends Component {
   constructor(props) {
     super(props);
-<<<<<<< HEAD
+
     this.state = {
       activeTab: 0,
+      teas:[],
       modalIsOpen: false
-
     };
+
     this.handleOpenDialog = this.handleOpenDialog.bind(this);
         this.handleCloseDialog = this.handleCloseDialog.bind(this);
+  }
+
+  componentDidMount() {
+    getTeas ()
+    .then (teas => this.setState ({teas}))
+    .catch (console.log)
   }
 
   handleOpenDialog() {
@@ -37,20 +41,6 @@ class Teas extends Component {
      openDialog: false
    });
  }
-=======
-    this.state = { activeTab: 0,
-    teas: []
-     };
-  }
-
-
->>>>>>> f708b1fc7db6361f1a20543828c1716f3cfe5ccc
-
-  componentDidMount() {
-    getTeas ()
-    .then (teas => this.setState ({teas}))
-    .catch (console.log)
-  }
 
   render() {
     return(
@@ -64,12 +54,11 @@ class Teas extends Component {
                 {tea.description}
               </CardText>
               <CardActions border>
-<<<<<<< HEAD
+
                 <Button colored onClick={this.handleOpenDialog} raised ripple>Buy</Button>
-=======
-              <Button raised>
-                  Buy It</Button>
->>>>>>> f708b1fc7db6361f1a20543828c1716f3cfe5ccc
+
+
+
               </CardActions>
               {/* <ZinModal modalIsOpen={this.state.modalIsOpen}
               closeModal={this.closeModal}/> */}
@@ -92,7 +81,6 @@ class Teas extends Component {
   }
 }
 
-// path='checkout' component={checkout}
-//     // <Button raised>
+
 
 export default Teas;

@@ -27,19 +27,7 @@ class App extends Component {
                 <Link to="/user">User</Link>
             </Navigation>
         </Header>
-<<<<<<< HEAD
-=======
-          <Drawer title="Login">
-              <Navigation>
-                <Link to="/home">Home</Link>
-                <Link to="/comments">Comments</Link>
-                <Link to="/teas">Teas</Link>
-                <Link to="/user">User</Link>
-                <Link
-                to="/checkout">cart</Link>
-              </Navigation>
-          </Drawer>
->>>>>>> f708b1fc7db6361f1a20543828c1716f3cfe5ccc
+
           <Content>
             <Switch>
               <Route  exact path='/' component={home} />
