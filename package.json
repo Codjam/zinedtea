@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "animate.css": "^3.6.1",
     "jquery": "^3.3.1",
+=======
+    "modal": "^1.2.0",
+>>>>>>> f708b1fc7db6361f1a20543828c1716f3cfe5ccc
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-mdl": "^1.11.0",
